@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Registro de pedidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:hint="Nombre Cliente">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputNombreCliente"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#FF5722"
+                android:textSize="20sp"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:hint="Número Cliente"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputNumeroCliente"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#FF5722"
+                android:textSize="20sp"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:hint="Productos">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputProductos"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#FF5722"
+                android:textSize="20sp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:hint="Ciudad">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputCiudad"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#FF5722"
+                android:textSize="20sp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:hint="Dirección">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#FF5722"
+                android:textSize="20sp"
+                android:inputType="textPostalAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Registrar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="128dp"
+        android:layout_weight="1"
+        android:background="@drawable/bacground_btn_2"
+        android:text="Rgistrar"
+        android:textColor="#FF5722"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.886"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
